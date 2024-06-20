@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="23dp"
+    android:background="#FF5722"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/total_questions"
+        android:textColor="#FFFF8D"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:ignore="VisualLintOverlap,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choices_layout"
+
+        android:layout_marginTop="150dp"
+        android:text="@string/this_is_a_question"
+        android:textColor="#FFFF8D"
+        android:textSize="25sp"
+        android:textStyle="normal|bold|italic"
+        tools:ignore="TextSizeCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="@string/ans_1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize">
+        </Button>
+  <Button
+      android:id="@+id/ans_2"
+      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="@string/ans_2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+      tools:ignore="VisualLintButtonSize">
+        </Button>
+  <Button
+      android:id="@+id/ans_3"
+      android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="@string/ans_3"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+      tools:ignore="VisualLintButtonSize">
+        </Button>
+  <Button
+            android:id="@+id/ans_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="@string/ans_4"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+      tools:ignore="VisualLintButtonSize">
+        </Button>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7BD512"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_below="@id/choices_layout"
+
+        tools:ignore="VisualLintButtonSize">
+    </Button>
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/submit"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-183dp"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/restart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" >
+    </Button>
+</RelativeLayout>
